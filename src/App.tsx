@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FlavnoidsTable from "./components/FlavnoidsTable";
+import GammaTable from "./components/GammaTable";
+
+import data from "./services/Wine-Data.json";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<FlavnoidsTable items={data} />
+			<GammaTable items={data} />
+		</div>
+	);
 }
 
 export default App;

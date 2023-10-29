@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Manufac SDE Interview Assignment - Data Visualization Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This repository contains my solution to the Manufac SDE interview assignment on Data visualization. The assignment required me to complete a specific task or solve a problem. In this document, I will provide details about my solution and how to run it.
 
-In the project directory, you can run:
+## Table Screenshots
 
-### `yarn start`
+![Data Table](tables.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Explanation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+While calculating the data few considerations were made which are as follows:
 
-### `yarn test`
+- Values are formatted based on its type. For example: **3 -> 3 instead of 3.000, 2.8 -> 2.8 instead of 2.800, 3.123456789 -> 3.123**
+- For the Mode, as per the concept there can be either **no mode, 1 mode** or **more than one modes**. So, if there are more than one modes possible then they are represented as comma separated values. If, 1 mode is possible it is represented as it is. And, if all the values appeared the same number of times or there is no mode possible then it is representd with **"-"**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `yarn build`
+- Node.js: Make sure you have Node.js installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to run
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Download the zip file or clone it using the below command
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/frontend-with-sumit/manufac.git
+```
 
-### `yarn eject`
+- To install the required packages, use the below command in the terminal
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+yarn
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- To start the server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+yarn start
+```
